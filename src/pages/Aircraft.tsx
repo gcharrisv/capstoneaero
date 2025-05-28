@@ -11,15 +11,22 @@ const Aircraft: React.FC = () => {
   return (
     <main>
       <section className="hero hero-aircraft">
-        <video className="aircraft-clean-video" autoPlay muted loop playsInline>
-          <source src={`${import.meta.env.BASE_URL}assets/videos/andurilExample.mp4`} type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+
+          <div className="features-image">
+            <img
+              className="feature-image"
+              src={`${import.meta.env.BASE_URL}assets/images/HangarWeaponRender.png`}
+              alt="A-30 Condor Features"
+            />
+          </div>
+
         <div className="hero-text">
           <h1>A-30 CONDOR</h1>
           <p>Light Tactical Aircraft Designed for COIN & CAS Missions</p>
         </div>
       </section>
+
+      <hr className="section-divider" />
 
       <section className="aircraft-spec-section">
         <div className="spec-content">
@@ -59,6 +66,8 @@ const Aircraft: React.FC = () => {
           </div>
         </div>
       </section>
+
+      <hr className="section-divider" />
 
       <Hotspots />
 

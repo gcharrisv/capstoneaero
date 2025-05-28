@@ -214,7 +214,7 @@
     }
 
     .team-card img {
-        height: 280px;
+        height: 400px;
     }
 
     .team-modal-body {
@@ -223,8 +223,8 @@
     }
 
     .team-modal-body img {
-        width: 200px;
-        height: 260px;
+        width: auto;
+        height: 400px;
     }
 
 }
