@@ -5,19 +5,14 @@ const Home: React.FC = () => {
     <main>
       <section className="hero">
         <video className="background-video" autoPlay muted loop playsInline>
-          <source src="/assets/videos/andurilExample.mp4" type="video/mp4" />
+          <source src={`${import.meta.env.BASE_URL}assets/videos/andurilExample.mp4`} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         <div className="hero-text">
           <p>Meet our aircraft</p>
           <h1>A-30 CONDOR</h1>
           <div className="hero-buttons">
-            <a
-              href="/assets/brochure.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="download-button"
-            >
+            <a href={`${import.meta.env.BASE_URL}assets/brochure.pdf`} target="_blank">
               📄 Download Brochure
             </a>
             <a href="/aircraft" className="view-link">
