@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import teamData from '../data/teamData.ts';
 import TeamCard from '../components/TeamCard';
 import TeamModal from '../components/TeamModal';
+import '../styles/team.css';
 
 const Team: React.FC = () => {
   const [selectedMember, setSelectedMember] = useState<string | null>(null);
@@ -14,6 +15,10 @@ const Team: React.FC = () => {
     setSelectedMember(null);
   };
 
+  useEffect(() => {
+    document.title = "Capstone Aerospace | Team";
+  }, []);
+
   const member = selectedMember ? teamData[selectedMember] : null;
 
   return (
@@ -23,14 +28,14 @@ const Team: React.FC = () => {
           <h1>MEET THE TEAM</h1>
         </div>
         <div className="hero-team-img">
-          <img src="/assets/images/The_Team_Photo.jpeg" alt="Team Photo" />
+          <img src={`${import.meta.env.BASE_URL}assets/images/The_Team_Photo.jpeg`} alt="Team Photo" />
         </div>
       </section>
 
       <section className="team-video">
         <h2>Behind the Project</h2>
         <video controls>
-          <source src="/assets/videos/andurilExample.mp4" type="video/mp4" />
+          <source src={`${import.meta.env.BASE_URL}assets/videos/andurilExample.mp4`} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </section>

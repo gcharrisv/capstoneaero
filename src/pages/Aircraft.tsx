@@ -1,11 +1,18 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import Hotspots from '../components/Hotspots';
+import '../styles/mission.css';
+import '../styles/aircraft.css';
+
 
 const Aircraft: React.FC = () => {
+  useEffect(() => {
+    document.title = "Capstone Aerospace | Aircraft";
+  }, []);
   return (
     <main>
       <section className="hero hero-aircraft">
         <video className="aircraft-clean-video" autoPlay muted loop playsInline>
-          <source src="/assets/videos/andurilExample.mp4" type="video/mp4" />
+          <source src={`${import.meta.env.BASE_URL}assets/videos/andurilExample.mp4`} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         <div className="hero-text">
@@ -14,73 +21,101 @@ const Aircraft: React.FC = () => {
         </div>
       </section>
 
-      <section className="aircraft-details">
-        <div className="aircraft-details-layout">
-          <div className="turntable-container">
-            <img
-              className="turntable-image"
-              src="/assets/images/TopViewDecaledGray.png"
-              alt="A-30 Condor Turntable"
-            />
+      <section className="aircraft-spec-section">
+        <div className="spec-content">
+          <div className="spec-text">
+            <h2>A-30 Condor</h2>
+            <h3>Overview</h3>
+
+            <div className="spec-table">
+              <div><strong>Wingspan</strong><span>51.6 ft</span></div>
+              <div><strong>Length</strong><span>38 ft</span></div>
+              <div><strong>Height</strong><span>13 ft</span></div>
+              <div><strong>Max Takeoff Weight</strong><span>14,200 lb</span></div>
+              <div><strong>Power</strong><span>1700 hp</span></div>
+              <div><strong>Max Speed</strong><span>325 KTAS</span></div>
+              <div><strong>Range</strong><span>1,800 nm</span></div>
+              <div><strong>Ceiling</strong><span>25,000 ft</span></div>
+              <div><strong>Payload Capacity</strong><span>3,500 lb</span></div>
+            </div>
+
+            <div className="hero-buttons">
+              <a
+                href={`${import.meta.env.BASE_URL}assets/brochure.pdf`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="download-button"
+              >
+                📄 Download Brochure
+              </a>
+            </div>
           </div>
 
-          <div className="aircraft-text">
-            <p>A-30 Condor</p>
-            <h2>Overview</h2>
-            <p>
-              The A-30 Condor is a light tactical aircraft designed for Counter-Insurgency (COIN) and Close Air Support
-              (CAS) missions. It features advanced avionics, a high-performance engine, and a versatile payload
-              capacity.
-            </p>
-            <h3>Specifications</h3>
-            <ul>
-              <li>Wingspan: 15.2 m</li>
-              <li>Length: 12.5 m</li>
-              <li>Height: 4.5 m</li>
-              <li>Max Takeoff Weight: 3,500 kg</li>
-              <li>Engine: Turbocharged Piston Engine</li>
-              <li>Max Speed: 300 knots</li>
-              <li>Range: 1,200 nautical miles</li>
-              <li>Ceiling: 25,000 feet</li>
-              <li>Payload Capacity: 1,000 kg</li>
-            </ul>
-          </div>
-          <div className="hero-buttons">
-            <a
-              href="/assets/brochure.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="download-button"
-            >
-              📄 Download Brochure
-            </a>
+          <div className="spec-image">
+            <img
+              src={`${import.meta.env.BASE_URL}assets/images/TopViewDecaledGray.png`}
+              alt="A-30 Condor"
+            />
           </div>
         </div>
       </section>
 
-      <section className="aircraft-features">
-        <h2>Key Features</h2>
-        <img
-          className="feature-image"
-          src="/assets/images/GrayDecaled1.png"
-          alt="A-30 Condor Features"
-        />
-        <ul>
-          <li>Modular Avionics Suite</li>
-          <li>Multi-Role Capability</li>
-          <li>Reliable High-Performance Engine</li>
-          <li>Versatile Payload Options</li>
-          <li>Enhanced Situational Awareness</li>
-        </ul>
-      </section>
+      <Hotspots />
 
-      <section className="mission-video">
-        <h2>Mission Video</h2>
-        <video className="mission-video" autoPlay muted loop playsInline>
-          <source src="/assets/videos/missionExampleVideo.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-        <p>Watch the A-30 Condor in action during a simulated mission.</p>
+      <section className="aircraft-features">
+        <hr className="section-divider" />
+        <div className="features-content">
+          <div className="features-text">
+            <h2>Key Features</h2>
+            <ul>
+              <li>Modular Avionics Suite</li>
+              <li>Multi-Role Capability</li>
+              <li>Reliable High-Performance Engine</li>
+              <li>Versatile Payload Options</li>
+              <li>Enhanced Situational Awareness</li>
+            </ul>
+          </div>
+
+          <div className="features-image">
+            <img
+              className="feature-image"
+              src={`${import.meta.env.BASE_URL}assets/images/GrayDecaled1.png`}
+              alt="A-30 Condor Features"
+            />
+          </div>
+        </div>
+
+        <hr className="section-divider" />
+
+        <section className="mission-profiles">
+          <h2>Mission Profiles</h2>
+          <div className="mission-grid">
+            <div className="mission-card">
+              <h3>Strike Mission</h3>
+              <p>
+                Designed for rapid response and precision air-to-ground engagement using guided munitions and onboard sensors.
+              </p>
+              <img
+                src={`${import.meta.env.BASE_URL}assets/images/strikemissionprofile.png`}
+                alt="Strike Mission"
+                className="mission-image"
+              />
+            </div>
+
+            <div className="mission-card">
+              <h3>Surveillance Mission</h3>
+              <p>
+                Optimized for long-endurance ISR missions with EO/IR and SIGINT payloads, enabling persistent battlefield awareness.
+              </p>
+              <img
+                src={`${import.meta.env.BASE_URL}assets/images/loitermission.png`}
+                alt="Surveillance Mission"
+                className="mission-image"
+              />
+            </div>
+          </div>
+        </section>
+
       </section>
     </main>
   );

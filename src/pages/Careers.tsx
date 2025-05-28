@@ -1,10 +1,14 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 
 const Careers: React.FC = () => {
 
   const handleApply = (jobTitle: string) => {
     alert(`Thanks for your interest in the ${jobTitle} position! We'll get back to you soon.`);
   };
+
+  useEffect(() => {
+    document.title = "Capstone Aerospace | Careers";
+  }, []);
 
   return (
     <main>

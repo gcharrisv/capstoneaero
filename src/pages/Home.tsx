@@ -1,33 +1,39 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import '../styles/home.css';
 
 const Home: React.FC = () => {
+  useEffect(() => {
+    document.title = "Capstone Aerospace";
+  }, []);
+
   return (
     <main>
-      <section className="hero">
-        <video className="background-video" autoPlay muted loop playsInline>
-          <source src={`${import.meta.env.BASE_URL}assets/videos/andurilExample.mp4`} type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-        <div className="hero-text">
-          <p>Meet our aircraft</p>
-          <h1>A-30 CONDOR</h1>
-          <div className="hero-buttons">
-            <a href={`${import.meta.env.BASE_URL}assets/brochure.pdf`} target="_blank">
+      <section className="aircraft-hero-section">
+        <div className="aircraft-hero-wrapper">
+          <img
+            src={`${import.meta.env.BASE_URL}assets/images/FlyingDesertRender7.png`}
+            alt="A-30 Condor in Flight"
+            className="aircraft-hero-background"
+          />
+
+          <div className="aircraft-hero-overlay">
+            <p className="hero-subtitle">Meet Our Aircraft</p>
+            <h1 className="hero-title">The A-30 CONDOR</h1>
+            <a
+              href={`${import.meta.env.BASE_URL}assets/brochure.pdf`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="download-button"
+            >
               📄 Download Brochure
             </a>
-            <a href="/aircraft" className="view-link">
-              → View Aircraft Page
+            <a href="#/aircraft" className="view-link learn-more-link">
+              → Learn More About Our Aircraft
             </a>
           </div>
         </div>
       </section>
 
-      <section className="mission">
-        <h2>Our Mission</h2>
-        <p>
-          Capstone Aerospace is a student-led organization at Cal Poly, San Luis Obispo, dedicated to advancing aerospace technology and education. Our mission is to design and build innovative aircraft that push the boundaries of engineering and performance.
-        </p>
-      </section>
     </main>
   );
 };

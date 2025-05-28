@@ -1,0 +1,77 @@
+.aircraft-features,
+.aircraft-spec-section {
+    background-color: var(--color-background);
+    color: white;
+    padding: 4rem 2rem;
+}
+
+.features-content,
+.spec-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1400px;
+    margin: auto;
+    gap: 2rem;
+    align-items: center;
+}
+
+.features-text,
+.spec-text {
+    flex: 1 1 500px;
+}
+
+.features-text h2,
+.spec-text h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.features-text li {
+    font-size: 1rem;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #333;
+    color: #ccc;
+}
+
+.features-image,
+.spec-image {
+    flex: 1 1 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.features-image img,
+.spec-image img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.spec-table {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 1rem;
+    column-gap: 2rem;
+    font-size: 0.95rem;
+    margin-bottom: 2rem;
+}
+
+.spec-table div {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #333;
+    padding-bottom: 0.5rem;
+}
+
+.spec-table strong {
+    font-weight: 600;
+    color: white;
+}
+
+.spec-table span {
+    color: #bbb;
+}
