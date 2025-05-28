@@ -1,0 +1,361 @@
+/* ---------- BASE RESET ---------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    min-height: 100%;
+    font-family: var(--ff-base);
+    background-color: var(--color-background);
+    color: var(--color-text-primary);
+    scroll-behavior: smooth;
+}
+
+img,
+video {
+    max-width: 100%;
+    display: flex;
+}
+
+/* ---------- HEADER ---------- */
+#site-header {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--spacing-gap-small);
+    padding: var(--spacing-header);
+    background-color: var(--color-text-primary);
+    font-family: var(--ff-heading);
+    z-index: 1000;
+    position: sticky;
+    top: 0;
+    height: 150px
+}
+
+/* ---------- LOGO ---------- */
+.company-logo-header {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: var(--color-background);
+    letter-spacing: 1px;
+    flex: 1;
+    text-decoration: none;
+}
+
+/* ---------- NAV LINKS ---------- */
+.nav-links {
+    display: flex;
+    gap: var(--spacing-gap-large);
+    flex-wrap: wrap;
+    padding-right: 40px;
+}
+
+.nav-links a {
+    color: var(--color-background);
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--color-accent);
+}
+
+/* ---------- Brochure ---------- */
+
+.hero-buttons {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+}
+
+.download-button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--color-accent);
+  color: var(--color-background);
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.download-button:hover {
+  background-color: var(--color-text-secondary);
+  color: var(--color-text-primary);
+}
+
+.view-link {
+  color: var(--color-accent);
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.view-link:hover {
+  color: var(--color-text-primary);
+}
+
+/* ---------- MENU BUTTON ---------- */
+#menu-button {
+    display: none;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: var(--color-background);
+    cursor: pointer;
+}
+
+/* ---------- Aircraft Main ---------- */
+
+.turntable-container {
+    display: flex;
+    flex: 1 1 60%;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+    box-sizing: border-box;
+}
+
+.turntable-image {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    object-fit: contain;
+}
+
+.aircraft-details-layout {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.aircraft-text {
+    flex: 1 1 25%;
+    order: -1;
+}
+
+/* ---------- Team Main ---------- */
+
+.hero-team {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.hero-team-text {
+    flex: 1 1 25%;
+    order: -1;
+}
+
+.hero-team-img {
+    flex: 1 1 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+    margin: auto;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-gap-large);
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.team-card {
+    background-color: var(--color-text-primary);
+    color: var(--color-background);
+    overflow: hidden;
+    text-align: center;
+    padding: 1rem;
+    box-shadow: var(--shadow-default);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.team-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.team-card img {
+    width: 100%;
+    height: 300px;
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+.team-card h3 {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    font-family: var(--ff-heading);
+}
+
+.team-card h4 {
+    font-size: 0.95rem;
+    font-weight: normal;
+    color: var(--color-accent);
+    margin: 0.5rem 0;
+}
+
+/* ---------- Team Modal ---------- */
+
+.team-modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.team-modal-content {
+    background-color: var(--color-surface);
+    color: var(--color-text-secondary);
+    border-radius: 8px;
+    padding: 2rem;
+    max-width: 800px;
+    width: 90%;
+    box-shadow: var(--shadow-default);
+    position: relative;
+}
+
+.close-modal {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.team-modal-body {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.team-modal-body img {
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.modal-text {
+    flex: 1 1 300px;
+}
+
+.modal-text h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.3rem;
+}
+
+.modal-text h4 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: var(--color-accent);
+}
+
+.modal-links a {
+    display: inline-block;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: var(--color-accent);
+    color: var(--color-background);
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.modal-links a:hover {
+    background-color: var(--color-text-secondary);
+    color: var(--color-text-primary);
+}
+
+.team-modal.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* ---------- MOBILE VIEW ---------- */
+@media (max-width: 800px) {
+    #menu-button {
+        display: block;
+        margin-left: auto;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: flex-end;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: var(--color-text-primary);
+        padding: var(--spacing-gap-medium);
+        box-shadow: var(--shadow-default);
+        border-radius: 0 0 8px 8px;
+        min-width: 160px;
+        gap: var(--spacing-gap-small);
+    }
+
+    .nav-links a {
+        padding: 0.5rem 0.75rem;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .turntable-container {
+        justify-content: center;
+        padding: 0 1rem;
+        margin: 2rem auto;
+        order: 1;
+    }
+
+    .turntable-image {
+        max-width: 90%;
+    }
+
+    .aircraft-text {
+        order: 2;
+        flex: 1 1 100%;
+    }
+
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+}

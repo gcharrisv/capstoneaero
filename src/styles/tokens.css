@@ -1,0 +1,25 @@
+:root {
+    /* Colors */
+    --color-background: #000000;
+    --color-surface: #D1D2D4;
+    --color-text-primary: #FFFFFF;
+    --color-text-secondary: #0D2847;
+    --color-accent: #E5C007;
+    --color-hover-bg: #E5C007;
+    --color-text-black: #231F20;
+
+    /* Font */
+    --ff-base: "Play-Regular", system-ui, sans-serif;
+    --ff-heading: "Play-Bold", system-ui, sans-serif;
+    --font-size-heading: 1.5em;
+
+    /* Spacing */
+    --spacing-page: 60px;
+    --spacing-header: 10px 20px;
+    --spacing-gap-large: 40px;
+    --spacing-gap-medium: 20px;
+    --spacing-gap-small: 10px;
+
+    /* Effects */
+    --shadow-default: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
