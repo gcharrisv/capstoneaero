@@ -24,11 +24,11 @@ const Team: React.FC = () => {
   return (
     <main>
       <section className="hero hero-team">
-        <div className="hero-team-text">
-          <h1>MEET THE TEAM</h1>
-        </div>
         <div className="hero-team-img">
           <img src={`${import.meta.env.BASE_URL}assets/images/The_Team_Photo.jpeg`} alt="Team Photo" />
+        </div>
+        <div className="hero-team-text">
+          <h1>MEET THE TEAM</h1>
         </div>
       </section>
 

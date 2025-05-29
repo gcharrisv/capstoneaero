@@ -1,11 +1,10 @@
 /* ---------- Shared Wrapper Styles ---------- */
 .aircraft-hero-wrapper,
 .team-hero-wrapper,
-.career-hero-wrapper,
-.calpoly-hero-wrapper {
+.career-hero-wrapper {
     position: relative;
     width: 100%;
-    height: 50vh;
+    height: 100vh;
     overflow: hidden;
 }
 
@@ -98,8 +97,9 @@
     align-items: center;
     justify-content: center;
     gap: 2rem;
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
+    height: 100vh;
 }
 
 .calpoly-content {
@@ -119,7 +119,7 @@
 
 .calpoly-logo {
     width: 100%;
-    max-width: 250px;
+    max-width: 200px;
     height: auto;
     opacity: 0.75;
     object-fit: contain;
@@ -128,7 +128,6 @@
 .calpoly-text-block {
     color: black;
     text-align: center;
-    padding: 0 1rem;
 }
 
 .calpoly-text-block h2 {
@@ -152,7 +151,8 @@
 
 .calpoly-video-container {
     width: 100%;
-    max-width: 960px;
+    max-width: 1200px;
+    height: auto;
     margin: 2rem auto 0 auto;
     padding: 0 1rem;
     z-index: 3;
