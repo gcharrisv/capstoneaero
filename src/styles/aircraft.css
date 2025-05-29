@@ -75,3 +75,63 @@
 .spec-table span {
     color: #bbb;
 }
+
+.hero-aircraft {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-aircraft-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.background-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+}
+
+.overlay-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    z-index: 2;
+    pointer-events: none;
+}
+
+
+.hero-aircraft-text {
+    position: relative;
+    z-index: 3;
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.hero-aircraft-text h1 {
+    font-size: 8rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.hero-aircraft-text p {
+    font-size: 3rem;
+    color: #ddd;
+}

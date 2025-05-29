@@ -10,17 +10,22 @@ const Aircraft: React.FC = () => {
   }, []);
   return (
     <main>
+
       <section className="hero hero-aircraft">
+        <div className="hero-aircraft-background">
+          <img
+            className="background-image"
+            src={`${import.meta.env.BASE_URL}assets/images/hangar_flags.png`}
+            alt="Hangar Background"
+          />
+          <img
+            className="overlay-image"
+            src={`${import.meta.env.BASE_URL}assets/images/Condor.png`}
+            alt="Overlay"
+          />
+        </div>
 
-          <div className="features-image">
-            <img
-              className="feature-image"
-              src={`${import.meta.env.BASE_URL}assets/images/HangarWeaponRender.png`}
-              alt="A-30 Condor Features"
-            />
-          </div>
-
-        <div className="hero-text">
+        <div className="hero-aircraft-text">
           <h1>A-30 CONDOR</h1>
           <p>Light Tactical Aircraft Designed for COIN & CAS Missions</p>
         </div>
