@@ -13,6 +13,7 @@
     top: 0;
     height: 150px;
     transition: transform 0.3s ease-in-out;
+    border-bottom: 1px solid var(--color-accent);
 }
 
 .company-logo-link {

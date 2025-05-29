@@ -75,6 +75,7 @@ const Header: React.FC = () => {
         <Link to="/team">TEAM</Link>
         <Link to="/careers">CAREERS</Link>
       </nav>
+
     </header>
   );
 };
