@@ -8,12 +8,12 @@ const Footer: React.FC = () => {
       {/* Left: Logos */}
       <div className="footer-logos">
         <img
-          src={`${import.meta.env.BASE_URL}assets/images/capstone_aerospace_logo_full.png`}
+          src={`${import.meta.env.BASE_URL}assets/images/capstone_logo_White.png`}
           alt="Capstone Logo"
           className="footer-logo"
         />
         <img
-          src={`${import.meta.env.BASE_URL}assets/images/cal_poly_green.png`}
+          src={`${import.meta.env.BASE_URL}assets/images/cal_poly_white.png`}
           alt="Cal Poly Logo"
           className="footer-logo"
         />
@@ -22,16 +22,16 @@ const Footer: React.FC = () => {
       {/* Center: Email Button */}
       <div className="footer-contact">
         <a href="mailto:capstoneaerospace@calpoly.edu" className="connect-button">
-          Connect
+          CONNECT
         </a>
       </div>
 
       {/* Right: Navigation Links */}
       <nav className="footer-links">
-        <Link to="/">Home</Link>
-        <Link to="/aircraft">Aircraft</Link>
-        <Link to="/team">Team</Link>
-        <Link to="/careers">Careers</Link>
+        <Link to="/">HOME</Link>
+        <Link to="/aircraft">AIRCRAFT</Link>
+        <Link to="/team">TEAM</Link>
+        <Link to="/careers">CAREERS</Link>
       </nav>
     </footer>
   );

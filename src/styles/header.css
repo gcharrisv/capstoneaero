@@ -1,17 +1,18 @@
 #site-header {
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     align-items: center;
     justify-content: space-between;
     gap: var(--spacing-gap-small);
-    padding: var(--spacing-header);
-    background-color: var(--color-text-primary);
+    padding: 1rem 2rem;
+    background-color: var(--color-background);
     font-family: var(--ff-heading);
     z-index: 1000;
     position: sticky;
     top: 0;
     height: 150px;
+    transition: transform 0.3s ease-in-out;
 }
 
 .company-logo-link {
@@ -44,7 +45,7 @@
 }
 
 .nav-links a {
-    color: var(--color-background);
+    color: var(--color-text-primary);
     text-decoration: none;
     font-size: 0.95rem;
     font-weight: 600;
@@ -61,12 +62,16 @@
     font-size: 1.5rem;
     background: none;
     border: none;
-    color: var(--color-background);
+    color: var(--color-text-primary);
     cursor: pointer;
 }
 
 .hidden {
     display: none !important;
+}
+
+.hide-header {
+    transform: translateY(-100%);
 }
 
 @media (max-width: 800px) {
@@ -77,14 +82,13 @@
 
     .nav-links {
         flex-direction: column;
-        align-items: flex-end;
+        align-items: center;
         position: absolute;
         top: 100%;
         right: 0;
-        background-color: var(--color-text-primary);
+        background-color: var(--color-background);
         padding: var(--spacing-gap-medium);
         box-shadow: var(--shadow-default);
-        border-radius: 0 0 8px 8px;
         min-width: 160px;
         gap: var(--spacing-gap-small);
     }

@@ -47,10 +47,10 @@
 
 /* ---------- Team Card ---------- */
 .team-card {
-    background-color: var(--color-text-primary);
-    color: var(--color-background);
-    border-radius: 8px;
+    background-color: black;
+    color: white;
     overflow: hidden;
+    border-style: groove;
     text-align: center;
     padding: 1.5rem 1rem;
     box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
@@ -112,12 +112,11 @@
 .team-modal {
     position: fixed;
     inset: 0;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.9);
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 2000;
-    opacity: 0;
     pointer-events: none;
     transition: opacity 0.3s ease;
 }
@@ -128,14 +127,14 @@
 }
 
 .team-modal-content {
-    background-color: var(--color-surface, #fff);
-    color: var(--color-text-secondary, #111);
-    border-radius: 8px;
+    background-color: black;
+    color: white;
     padding: 2rem;
     max-width: 800px;
     width: 90%;
     box-shadow: var(--shadow-default, 0 4px 20px rgba(0, 0, 0, 0.3));
     position: relative;
+    border: white 1px groove;
 }
 
 .close-modal {
@@ -145,7 +144,6 @@
     font-size: 1.5rem;
     font-weight: bold;
     background: none;
-    border: none;
     color: inherit;
     cursor: pointer;
 }
@@ -160,7 +158,6 @@
     width: 250px;
     height: 300px;
     object-fit: cover;
-    border-radius: 6px;
 }
 
 .modal-text {
@@ -180,7 +177,7 @@
 
 .modal-text p {
     font-size: 0.95rem;
-    color: #555;
+    color: white;
 }
 
 .modal-links a {
@@ -214,7 +211,7 @@
     }
 
     .team-card img {
-        height: 400px;
+        height: 280px;
     }
 
     .team-modal-body {
@@ -223,8 +220,8 @@
     }
 
     .team-modal-body img {
-        width: auto;
-        height: 400px;
+        width: 200px;
+        height: 260px;
     }
 
 }

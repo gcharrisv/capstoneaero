@@ -5,20 +5,22 @@ import '../styles/header.css';
 const Header: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [isMobileView, setIsMobileView] = useState(window.innerWidth < 800);
+  const [hideOnScroll, setHideOnScroll] = useState(false);
   const navRef = useRef<HTMLElement>(null);
+  const lastScrollY = useRef(window.scrollY);
   const location = useLocation();
 
   useEffect(() => {
     const handleResize = () => {
       setIsMobileView(window.innerWidth < 800);
     };
-    handleResize(); // set on mount
+    handleResize();
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
   useEffect(() => {
-    setMenuOpen(false); // close on nav change
+    setMenuOpen(false);
   }, [location.pathname]);
 
   useEffect(() => {
@@ -31,11 +33,25 @@ const Header: React.FC = () => {
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentY = window.scrollY;
+      setHideOnScroll(currentY > lastScrollY.current && currentY > 100);
+      lastScrollY.current = currentY;
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
-    <header id="site-header" ref={navRef}>
+    <header
+      id="site-header"
+      ref={navRef}
+      className={hideOnScroll ? 'hide-header' : ''}
+    >
       <Link to="/" className="company-logo-link">
         <img
-          src={`${import.meta.env.BASE_URL}assets/images/capstone_aerospace_logo_full.png`}
+          src={`${import.meta.env.BASE_URL}assets/images/capstone_logo_White.png`}
           alt="Capstone Aerospace Logo"
           className="company-logo-image"
         />
@@ -64,3 +80,4 @@ const Header: React.FC = () => {
 };
 
 export default Header;
+
