@@ -82,7 +82,7 @@
 }
 
 .learn-more-link:hover {
-    color: var(--color-text-primary);
+    color: var(--color--text-secondary);
     transform: translateX(5px);
 }
 
