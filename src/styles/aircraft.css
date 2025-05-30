@@ -38,10 +38,11 @@
 
 .features-image,
 .spec-image {
-    flex: 1 1 500px;
+    flex: 1 1 568px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 3rem;
 }
 
 .features-image img,
@@ -157,6 +158,15 @@
     color: white;
 }
 
+/* Utility classes */
+.desktop-only {
+    display: block;
+}
+
+.mobile-only {
+    display: none;
+}
+
 
 @media (max-width: 768px) {
     .hero-aircraft {
@@ -178,8 +188,22 @@
         line-height: 1.4;
     }
 
+    .spec-table {
+        margin-bottom: 1rem;
+    }
+
     .buttons .download-button {
         font-size: 0.8rem;
+    }
+
+    .desktop-only {
+        display: none;
+    }
+
+    .mobile-only {
+        display: block;
+        width: 100%;
+        margin-top: 2rem;
     }
 
 }

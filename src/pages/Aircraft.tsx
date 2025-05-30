@@ -42,12 +42,29 @@ const Aircraft: React.FC = () => {
               <div><strong>Ceiling</strong><span>25,000 ft</span></div>
               <div><strong>Payload Capacity</strong><span>3,500 lb</span></div>
             </div>
+
+            {/* Only show in desktop */}
+            <div className="spec-image desktop-only">
+              <img
+                src={`${import.meta.env.BASE_URL}assets/images/front_view.png`}
+                alt="Front View"
+              />
+            </div>
           </div>
 
-          <div className="spec-image">
+          {/* Only show in desktop */}
+          <div className="spec-image desktop-only">
+            <img
+              src={`${import.meta.env.BASE_URL}assets/images/top_side_view.png`}
+              alt="Top & Side View"
+            />
+          </div>
+
+          {/* Only show in mobile */}
+          <div className="spec-image mobile-only">
             <img
               src={`${import.meta.env.BASE_URL}assets/images/stacked_views.png`}
-              alt="A-30 Condor"
+              alt="Stacked Views"
             />
           </div>
         </div>
@@ -70,9 +87,9 @@ const Aircraft: React.FC = () => {
           >
             Symposium Poster
           </a>
-
         </div>
       </section>
+
 
       <hr className="section-divider" />
 
