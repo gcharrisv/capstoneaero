@@ -223,8 +223,9 @@
    RESPONSIVE (Mobile)
 ------------------------------ */
 @media (max-width: 768px) {
+
     .hero-team-text {
-        font-size: 2rem;
+        font-size: 1.5rem;
         padding: 0.5rem 1rem;
     }
 
@@ -260,6 +261,12 @@
         text-align: right;
         padding: 1rem;
         z-index: 10;
+    }
+
+    .team-video h2 {
+        font-size: 2rem;
+        margin-bottom: 4rem;
+        color: var(--color-text-primary);
     }
 
 }
