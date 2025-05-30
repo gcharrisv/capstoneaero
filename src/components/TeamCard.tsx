@@ -13,6 +13,7 @@ const TeamCard: React.FC<TeamCardProps> = ({ name, img, role, onClick }) => {
       <img src={img} alt={name} />
       <h3>{name}</h3>
       <h4>{role}</h4>
+      <p className="learn-more-line">Learn more about {name}</p>
     </article>
   );
 };

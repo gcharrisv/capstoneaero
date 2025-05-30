@@ -14,7 +14,7 @@ const teamData: Record<string, TeamMember> = {
     role: "Configuration & Systems Engineer",
     desc: "George is a graduating fifth-year Aerospace Engineering student at Cal Poly, concentrating in Aeronautics with a minor in Computer Science. He led the Computer-Aided Design (CAD) of the A-30 Condor, ensuring all subsystems were accurately integrated within the aircraft's outer mold line (OML). George collaborated closely with the engineering team to maintain aerodynamic performance and design intent throughout the development process. He is excited to begin his professional career as a Weapons Integration Engineer for the F-22 Raptor at Edwards Air Force Base.",
     linkedin: "https://www.linkedin.com/in/georgeharrison",
-    resume: `${base}assets/resumes/Harrison_Extended_Resume_2025.pdf`
+    resume: `${base}assets/resumes/Harrison_Resume_5_30_25.pdf`
   },
   "Jack Kisling": {
     img: `${base}assets/images/JackK_img.jpeg`,
