@@ -57,15 +57,25 @@ const Aircraft: React.FC = () => {
           </div>
         </div>
 
-        <div className="brochure-button">
+        <div className="buttons">
           <a
             href={`${import.meta.env.BASE_URL}assets/brochure.pdf`}
             target="_blank"
             rel="noopener noreferrer"
             className="download-button"
           >
-            📄 Download Brochure
+            📄 Brochure
           </a>
+
+          <a
+            href={`${import.meta.env.BASE_URL}assets/poster.pdf`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="download-button"
+          >
+            📄 Symposium Poster
+          </a>
+
         </div>
       </section>
 
