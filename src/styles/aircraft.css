@@ -209,7 +209,7 @@
 .aircraft-intro {
     background-color: var(--color-background);
     color: white;
-    padding: 6rem 2rem;
+    padding: 4rem 2rem;
 }
 
 .intro-content {
@@ -232,7 +232,6 @@
     max-width: 100%;
     height: auto;
     object-fit: contain;
-    filter: brightness(0.85);
 }
 
 .intro-text {
@@ -326,5 +325,18 @@
     .intro-text p {
         font-size: 0.95rem;
     }
+
+    .aircraft-intro {
+        padding: 2rem 1rem;
+    }
+
+    .intro-content {
+        gap: 1rem;
+    }
+
+    .intro-text {
+        margin-top: 1rem;
+    }
+
 
 }
