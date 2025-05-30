@@ -26,6 +26,27 @@ const Aircraft: React.FC = () => {
         </div>
       </section>
 
+      <section className="aircraft-intro">
+        <div className="intro-content">
+          <div className="intro-image">
+            <img
+              src={`${import.meta.env.BASE_URL}assets/images/FlyingAllRender2.png`}
+              alt="Outline of A-30 Condor"
+            />
+          </div>
+          <div className="intro-text">
+            <p className="intro-label">Light Tactical Aircraft</p>
+            <h2 className="intro-title">Built for the Fight, Ready for the Frontier</h2>
+            <p>
+              The A-30 Condor is a <strong>rugged, high-performance strike platform</strong> purpose-built for Close Air Support and Counter-Insurgency missions in the world's most demanding environments. Designed to thrive in austere and expeditionary settings, it delivers precision lethality where it matters most.
+            </p>
+            <p>
+              With <strong>modular systems, rapid deployment capability, and exceptional situational awareness</strong>, the Condor gives ground forces the support they need—fast. Whether it’s a dirt strip in a conflict zone or a forward-operating base in the mountains, the Condor gets there, hits hard, and gets out.
+            </p>
+          </div>
+        </div>
+      </section>
+
       <hr className="section-divider" />
 
       <section className="aircraft-spec-section">
@@ -90,66 +111,48 @@ const Aircraft: React.FC = () => {
         </div>
       </section>
 
-
       <hr className="section-divider" />
+
+      <div className="hotspots-title">
+        <h2 className="hotspots-title">Key Features</h2>
+      </div>
 
       <Hotspots />
 
-      <section className="aircraft-features">
-        <hr className="section-divider" />
-        <div className="features-content">
-          <div className="features-text">
-            <h2>Key Features</h2>
-            <ul>
-              <li>Modular Avionics Suite</li>
-              <li>Multi-Role Capability</li>
-              <li>Reliable High-Performance Engine</li>
-              <li>Versatile Payload Options</li>
-              <li>Enhanced Situational Awareness</li>
-            </ul>
-          </div>
-
-          <div className="features-image">
-            <img
-              className="feature-image"
-              src={`${import.meta.env.BASE_URL}assets/images/GrayDecaled1.png`}
-              alt="A-30 Condor Features"
-            />
-          </div>
+      <section className="aircraft-pillars">
+        <div className="pillar">
+          <h3>Mission-Ready, Cost-Effective</h3>
+          <hr />
+          <p>
+            Built with affordability in mind, the A-30 Condor delivers frontline capabilities at a fraction of the cost of legacy strike aircraft. Leveraging commercial off-the-shelf components and a streamlined digital production pipeline, the Condor minimizes both acquisition and lifecycle costs—without sacrificing performance.
+          </p>
         </div>
 
-        <hr className="section-divider" />
+        <div className="pillar">
+          <h3>Multi-Role Flexibility</h3>
+          <hr />
+          <p>
+            Optimized for Close Air Support and Counter-Insurgency missions, the Condor also adapts seamlessly to <strong>training, ISR, and light attack roles</strong>. Its open mission systems architecture allows rapid reconfiguration to meet diverse operational needs across conventional and irregular conflicts.
+          </p>
+        </div>
 
-        <section className="mission-profiles">
-          <h2>Mission Profiles</h2>
-          <div className="mission-grid">
-            <div className="mission-card">
-              <h3>Strike Mission</h3>
-              <p>
-                Designed for rapid response and precision air-to-ground engagement using guided munitions and onboard sensors.
-              </p>
-              <img
-                src={`${import.meta.env.BASE_URL}assets/images/strikemissionprofile.png`}
-                alt="Strike Mission"
-                className="mission-image"
-              />
-            </div>
+        <div className="pillar">
+          <h3>Built for the Harshest Conditions</h3>
+          <hr />
+          <p>
+            Engineered for austere and expeditionary operations, the A-30 is rugged enough for unprepared runways and forward arming and refueling points. From jungle to desert, it’s designed to operate where others can't—supporting ground forces in the most demanding environments on Earth.
+          </p>
+        </div>
 
-            <div className="mission-card">
-              <h3>Surveillance Mission</h3>
-              <p>
-                Optimized for long-endurance ISR missions with EO/IR and SIGINT payloads, enabling persistent battlefield awareness.
-              </p>
-              <img
-                src={`${import.meta.env.BASE_URL}assets/images/loitermission.png`}
-                alt="Surveillance Mission"
-                className="mission-image"
-              />
-            </div>
-          </div>
-        </section>
-
+        <div className="pillar">
+          <h3>Global Force Multiplier</h3>
+          <hr />
+          <p>
+            With scalable capabilities, easy-to-maintain systems, and NATO interoperability, the Condor is positioned as a versatile solution for both allied air forces and emerging defense markets. It offers a strategic mix of power, affordability, and reliability tailored for global mission sets.
+          </p>
+        </div>
       </section>
+
     </main>
   );
 };
