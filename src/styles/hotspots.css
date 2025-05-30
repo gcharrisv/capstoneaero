@@ -2,10 +2,13 @@
 .hotspot-container {
     position: relative;
     background-color: var(--color-background);
-    padding: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: visible;
 }
 
 .hotspot-image {
@@ -14,28 +17,40 @@
     object-fit: contain;
 }
 
+/* ---------- Circle Button ---------- */
 .hotspot-circle {
     position: absolute;
-    width: 18px;
-    height: 18px;
-    border: 2px solid black;
+    width: 20px;
+    height: 20px;
+    border: none;
     border-radius: 50%;
     background-color: #E5C007;
     cursor: pointer;
-    transition: transform 0.2s ease;
+    transition: all 0.3s ease;
+    z-index: 5;
 }
 
-.hotspot-circle:hover {
+.hotspot-circle.fade-out {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.hotspot-circle.fade-in {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.hotspot-circle:not(.open):hover {
     transform: scale(1.2);
 }
 
-/* ---------- Modal Growth Animation ---------- */
+/* ---------- Modal ---------- */
 .hotspot-modal {
     position: absolute;
     background-color: black;
     color: white;
     height: auto;
-    /* Final height */
     max-width: 300px;
     width: 0;
     padding: 0;
@@ -45,8 +60,8 @@
     box-shadow: 0 0 20px rgba(229, 192, 7, 0.3);
     overflow: hidden;
     animation: growWidthOnly 0.4s ease-out forwards;
+    transform-origin: top left;
 }
-
 
 @keyframes growWidthOnly {
     from {
@@ -58,15 +73,11 @@
 
     to {
         width: 300px;
-        padding-left: 1.5rem;
-        padding-right: 1.5rem;
-        padding-top: 1.5rem;
-        padding-bottom: 1.5rem;
+        padding: 1.5rem;
         opacity: 1;
     }
 }
 
-/* ---------- Text Fade-In ---------- */
 .hotspot-modal-inner {
     opacity: 0;
     animation: fadeInText 0.4s ease-out 0.4s forwards;
@@ -84,7 +95,6 @@
     }
 }
 
-/* ---------- Modal Content ---------- */
 .hotspot-modal h3 {
     margin-bottom: 0.5rem;
     color: white;
@@ -101,7 +111,7 @@
     color: #ccc;
 }
 
-/* ---------- Floating Close Button ---------- */
+/* ---------- Close Button ---------- */
 .hotspot-close-float {
     position: absolute;
     background-color: white;
@@ -130,9 +140,19 @@
     }
 }
 
-/* ---------- Mobile Modal Override ---------- */
-@media (max-width: 800px) {
-    .hotspot-modal {
+.hotspot-mobile-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 9;
+}
+
+/* Override modal style for mobile layout */
+@media (max-width: 768px) {
+    .hotspot-modal.mobile {
         position: fixed !important;
         top: 50% !important;
         left: 50% !important;
@@ -141,6 +161,7 @@
         max-width: 90%;
         padding: 1.5rem !important;
         animation: growWidthMobile 0.4s ease-out forwards;
+        z-index: 10;
     }
 
     @keyframes growWidthMobile {
@@ -156,8 +177,6 @@
     }
 
     .hotspot-close-float {
-        top: 10px !important;
-        left: auto !important;
-        right: 10px !important;
+        display: none !important;
     }
 }

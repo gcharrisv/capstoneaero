@@ -39,17 +39,27 @@ export default function Hotspots() {
                 className="hotspot-image"
             />
 
-            {hotspots.map(h => (
-                <div
-                    key={h.id}
-                    className="hotspot-circle"
-                    style={{ top: h.top, left: h.left }}
-                    onClick={() => setSelected(h.id)}
-                />
-            ))}
+            {hotspots.map(h => {
+                const isSelected = selected === h.id;
+                const isAnotherSelected = selected !== null && !isSelected;
+
+                return (
+                    <div
+                        key={h.id}
+                        className={`hotspot-circle ${isSelected ? 'open' : ''} ${isAnotherSelected ? 'fade-out' : 'fade-in'}`}
+                        style={{ top: h.top, left: h.left }}
+                        onClick={() => setSelected(h.id)}
+                    />
+                );
+            })}
 
             {selectedHotspot && (
                 <>
+                    {/* Fullscreen background only for mobile to allow tap-to-close */}
+                    {isMobile && (
+                        <div className="hotspot-mobile-backdrop" onClick={() => setSelected(null)} />
+                    )}
+
                     <div
                         className={`hotspot-modal ${isMobile ? 'mobile' : 'desktop'}`}
                         style={
@@ -72,8 +82,8 @@ export default function Hotspots() {
                         <button
                             className="hotspot-close-float"
                             style={{
-                                top: `calc(${selectedHotspot.top} - 20px)`,
-                                left: `calc(${selectedHotspot.left} - 20px)`,
+                                top: `calc(${selectedHotspot.top} - 5px)`,
+                                left: `calc(${selectedHotspot.left} - 5px)`,
                             }}
                             onClick={() => setSelected(null)}
                         >
@@ -85,6 +95,7 @@ export default function Hotspots() {
         </div>
     );
 }
+
 
 
 
