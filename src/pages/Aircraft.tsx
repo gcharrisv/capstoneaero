@@ -64,7 +64,7 @@ const Aircraft: React.FC = () => {
             rel="noopener noreferrer"
             className="download-button"
           >
-            📄 Brochure
+            Brochure
           </a>
 
           <a
@@ -73,7 +73,7 @@ const Aircraft: React.FC = () => {
             rel="noopener noreferrer"
             className="download-button"
           >
-            📄 Symposium Poster
+            Symposium Poster
           </a>
 
         </div>

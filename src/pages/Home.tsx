@@ -29,7 +29,7 @@ const Home: React.FC = () => {
               rel="noopener noreferrer"
               className="download-button"
             >
-              📄 Download Brochure
+              Download Brochure
             </a>
             <a href="#/aircraft" className="view-link learn-more-link">
               → Learn More About Our Aircraft
