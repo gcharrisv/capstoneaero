@@ -23,9 +23,9 @@
 
 .features-text h2,
 .spec-text h2 {
-    font-size: 2rem;
+    font-size: 3.5rem;
     font-weight: bold;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     color: white;
 }
 
@@ -52,18 +52,17 @@
 }
 
 .spec-table {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    row-gap: 1rem;
-    column-gap: 2rem;
-    font-size: 0.95rem;
-    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    font-size: 1rem;
+    margin-bottom: 5rem;
 }
 
 .spec-table div {
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid #333;
+    border-bottom: 2px solid #333;
     padding-bottom: 0.5rem;
 }
 
@@ -73,7 +72,7 @@
 }
 
 .spec-table span {
-    color: #bbb;
+    color: var(--color-accent);
 }
 
 .hero-aircraft {
@@ -133,5 +132,49 @@
 
 .hero-aircraft-text p {
     font-size: 3rem;
-    color: #ddd;
+    color: white;
+}
+
+.brochure-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.brochure-button .download-button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    background-color: var(--color-accent);
+    color: var(--color-background);
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+.brochure-button .download-button:hover {
+    background-color: var(--color-text-secondary);
+    color: white;
+}
+
+
+@media (max-width: 768px) {
+    .hero-aircraft {
+        padding: 1rem;
+    }
+
+    .hero-aircraft-text {
+        padding: 1rem;
+        background: rgba(0, 0, 0, 0.6);
+    }
+
+    .hero-aircraft-text h1 {
+        font-size: 3rem;
+        /* Scaled down from 8rem */
+        line-height: 1.2;
+    }
+
+    .hero-aircraft-text p {
+        font-size: 1.25rem;
+        line-height: 1.4;
+    }
 }

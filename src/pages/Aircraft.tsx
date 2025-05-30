@@ -36,30 +36,16 @@ const Aircraft: React.FC = () => {
       <section className="aircraft-spec-section">
         <div className="spec-content">
           <div className="spec-text">
-            <h2>A-30 Condor</h2>
-            <h3>Overview</h3>
+            <h3>A-30 Condor</h3>
+            <h2>Overview</h2>
 
             <div className="spec-table">
-              <div><strong>Wingspan</strong><span>51.6 ft</span></div>
-              <div><strong>Length</strong><span>38 ft</span></div>
-              <div><strong>Height</strong><span>13 ft</span></div>
               <div><strong>Max Takeoff Weight</strong><span>14,200 lb</span></div>
               <div><strong>Power</strong><span>1700 hp</span></div>
               <div><strong>Max Speed</strong><span>325 KTAS</span></div>
               <div><strong>Range</strong><span>1,800 nm</span></div>
               <div><strong>Ceiling</strong><span>25,000 ft</span></div>
               <div><strong>Payload Capacity</strong><span>3,500 lb</span></div>
-            </div>
-
-            <div className="hero-buttons">
-              <a
-                href={`${import.meta.env.BASE_URL}assets/brochure.pdf`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="download-button"
-              >
-                📄 Download Brochure
-              </a>
             </div>
           </div>
 
@@ -69,6 +55,17 @@ const Aircraft: React.FC = () => {
               alt="A-30 Condor"
             />
           </div>
+        </div>
+
+        <div className="brochure-button">
+          <a
+            href={`${import.meta.env.BASE_URL}assets/brochure.pdf`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="download-button"
+          >
+            📄 Download Brochure
+          </a>
         </div>
       </section>
 
