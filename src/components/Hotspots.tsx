@@ -2,20 +2,47 @@ import { useState, useEffect } from 'react';
 import '../styles/hotspots.css';
 
 const hotspots = [
+
     {
         id: 1,
-        top: '55%',
-        left: '38%',
-        title: 'Modular Subsystems',
-        desc: 'Designed to avoid over-engineering by leveraging modular subsystems interoperable with commercial off-the-shelf hardware.',
+        top: '42.5%',
+        left: '20%',
+        title: 'Reliable High-Performance Powerplant',
+        desc: 'Powered by a robust turboprop engine, the A-30 Condor delivers consistent high-output thrust, optimized for rapid deployment and sustained mission endurance in austere environments.',
     },
+
     {
         id: 2,
-        top: '45%',
-        left: '32%',
+        top: '56%',
+        left: '31%',
         title: 'Sensor Fusion',
-        desc: 'Integrated EO/IR, radar, and SIGINT sensors feed a central mission computer.',
+        desc: 'The Condor integrates EO/IR, radar, and SIGINT payloads into a unified mission system, enabling operators to achieve superior situational awareness and real-time threat assessment.',
     },
+
+    {
+        id: 3,
+        top: '42.5%',
+        left: '42.5%',
+        title: 'Modular Avionics Suite',
+        desc: 'A reconfigurable avionics architecture supports rapid tech insertion and customization, reducing integration time while allowing for mission-specific upgrades on demand.',
+    },
+
+    {
+        id: 4,
+        top: '72.5%',
+        left: '25%',
+        title: 'Versatile Payload Options',
+        desc: 'Designed with multi-role capability in mind, the A-30 can be equipped with precision-guided munitions, ISR sensors, or auxiliary fuel—adapting to strike, support, or recon roles.',
+    },
+
+    {
+        id: 5,
+        top: '60%',
+        left: '50%',
+        title: 'Superior Takeoff and Landing Performance',
+        desc: 'With a high-lift wing design and rugged gear, the Condor excels in short and unprepared runway operations—ideal for forward operating bases and expeditionary missions.',
+    },
+
 ];
 
 export default function Hotspots() {
@@ -33,8 +60,9 @@ export default function Hotspots() {
 
     return (
         <div className="hotspot-container">
+
             <img
-                src={`${import.meta.env.BASE_URL}assets/images/GrayDecaled1.png`}
+                src={`${import.meta.env.BASE_URL}assets/images/FireMissileRender.png`}
                 alt="A-30 Condor Side View"
                 className="hotspot-image"
             />

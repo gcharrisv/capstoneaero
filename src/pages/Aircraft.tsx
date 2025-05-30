@@ -18,11 +18,6 @@ const Aircraft: React.FC = () => {
             src={`${import.meta.env.BASE_URL}assets/images/hangar_flags.png`}
             alt="Hangar Background"
           />
-          <img
-            className="overlay-image"
-            src={`${import.meta.env.BASE_URL}assets/images/Condor.png`}
-            alt="Overlay"
-          />
         </div>
 
         <div className="hero-aircraft-text">
@@ -51,7 +46,7 @@ const Aircraft: React.FC = () => {
 
           <div className="spec-image">
             <img
-              src={`${import.meta.env.BASE_URL}assets/images/TopViewDecaledGray.png`}
+              src={`${import.meta.env.BASE_URL}assets/images/stacked_views.png`}
               alt="A-30 Condor"
             />
           </div>
