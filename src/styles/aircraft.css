@@ -178,4 +178,9 @@
         font-size: 1.25rem;
         line-height: 1.4;
     }
+
+    .buttons .download-button {
+        font-size: 0.8rem;
+    }
+
 }
