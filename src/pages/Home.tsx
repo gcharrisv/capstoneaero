@@ -24,7 +24,7 @@ const Home: React.FC = () => {
             <p className="hero-subtitle">Meet Our Aircraft</p>
             <h2 className="hero-title">The A-30 CONDOR</h2>
             <a
-              href={`${import.meta.env.BASE_URL}assets/brochure.pdf`}
+              href={`${import.meta.env.BASE_URL}assets/capstone_aerospace_brochure.pdf`}
               target="_blank"
               rel="noopener noreferrer"
               className="download-button"

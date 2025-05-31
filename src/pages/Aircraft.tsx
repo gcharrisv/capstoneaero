@@ -92,7 +92,7 @@ const Aircraft: React.FC = () => {
 
         <div className="buttons">
           <a
-            href={`${import.meta.env.BASE_URL}assets/brochure.pdf`}
+            href={`${import.meta.env.BASE_URL}assets/capstone_aerospace_brochure.pdf`}
             target="_blank"
             rel="noopener noreferrer"
             className="download-button"
@@ -101,7 +101,7 @@ const Aircraft: React.FC = () => {
           </a>
 
           <a
-            href={`${import.meta.env.BASE_URL}assets/poster.pdf`}
+            href={`${import.meta.env.BASE_URL}assets/capstone_aerospace_symposium_poster.pdf`}
             target="_blank"
             rel="noopener noreferrer"
             className="download-button"

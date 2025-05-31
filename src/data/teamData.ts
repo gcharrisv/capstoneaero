@@ -10,11 +10,11 @@ const base = import.meta.env.BASE_URL;
 
 const teamData: Record<string, TeamMember> = {
   "George Harrison V": {
-    img: `${base}assets/images/George_img.jpeg`,
+    img: `${base}assets/images/George_img.jpg`,
     role: "Configuration & Systems Engineer",
     desc: "George is a graduating fifth-year Aerospace Engineering student at Cal Poly, concentrating in Aeronautics with a minor in Computer Science. He led the Computer-Aided Design (CAD) of the A-30 Condor, ensuring all subsystems were accurately integrated within the aircraft's outer mold line (OML). George collaborated closely with the engineering team to maintain aerodynamic performance and design intent throughout the development process. He is excited to begin his professional career as a Weapons Integration Engineer for the F-22 Raptor at Edwards Air Force Base.",
     linkedin: "https://www.linkedin.com/in/georgeharrison",
-    resume: `${base}assets/resumes/Harrison_Resume_5_30_25.pdf`
+    resume: `${base}assets/resumes/harrison_resume.pdf`
   },
   "Jack Kisling": {
     img: `${base}assets/images/JackK_img.jpeg`,
@@ -26,37 +26,37 @@ const teamData: Record<string, TeamMember> = {
   "Euan Houston": {
     img: `${base}assets/images/Euan_img.jpg`,
     role: "Performance Engineer",
-    desc: "Euan is a 5th year Aerospace Engineering student at Cal Poly with a passion for aircraft design and software.",
-    linkedin: "https://linkedin.com/in/euanhousten",
+    desc: "Euan graduated from Cal Poly with a degree in Aerospace engineering. He was the performance lead on the A-30 Condor where he ensured the aircraft capabilities through realistic simulation and analysis.",
+    linkedin: "https://www.linkedin.com/in/euanhouston/",
     resume: `${base}assets/resumes/euan_resume.pdf`
   },
   "Luca Flick-Kaiser": {
     img: `${base}assets/images/Luca_img.jpg`,
     role: "Aerodynamics Engineer",
-    desc: "Luca is a 5th year Aerospace Engineering student at Cal Poly with a passion for aircraft design and software.",
+    desc: "Luca is a fourth-year Aerospace Engineering student at Cal Poly, concentrating in Aeronautics. He led the initial aerodynamic analysis and design of the A-30 Condor, ensuring the aircraft met performance targets for aerodynamic efficiency while addressing structural constraints. Passionate about advancing his expertise, Luca plans to continue his education at Cal Poly and is on track to earn his master’s degree in Aerospace Engineering by 2026.",
     linkedin: "https://linkedin.com/in/lucaflickkaiser",
     resume: `${base}assets/resumes/luca_resume.pdf`
   },
   "Jack Peterson": {
-    img: `${base}assets/images/JackP_img.png`,
+    img: `${base}assets/images/JackP_img.jpg`,
     role: "Stability & Controls Engineer",
     desc: "Jack is a 5th year Aerospace Engineering student at Cal Poly with a passion for aircraft design and software.",
-    linkedin: "https://linkedin.com/in/jackpeterson",
+    linkedin: "https://www.linkedin.com/in/jackpeterson47",
     resume: `${base}assets/resumes/jackp_resume.pdf`
   },
   "Michael Beath": {
     img: `${base}assets/images/Michael_img.jpg`,
     role: "Mass Properties & Structures Engineer",
-    desc: "Michael is a 5th year Aerospace Engineering student at Cal Poly with a passion for aircraft design and software.",
-    linkedin: "https://linkedin.com/in/michaelbeath",
-    resume: `${base}assets/resumes/michael_resume.pdf`
+    desc: "Michael has a history of aircraft maintenance supporting wildland firefighting and has recently transitioned to engineering. A 4th year Aerospace Engineering  student from California Polytechnic University SLO, Michael has performed weight estimation, drag analysis, & weapons analysis for the A-30 Condor. He looks forward to working in the future on new and existing aircraft systems.",
+    linkedin: "https://www.linkedin.com/in/beath/",
+    resume: `${base}assets/resumes/beath_resume.pdf`
   },
   "Nico Morrison": {
     img: `${base}assets/images/Nico_img.jpeg`,
     role: "Subsystems Engineer",
     desc: "Nico is a 5th year Aerospace Engineering student at Cal Poly with a passion for aircraft design and software.",
-    linkedin: "https://linkedin.com/in/nicomorrison",
-    resume: `${base}assets/resumes/nico_resume.pdf`
+    linkedin: "https://www.linkedin.com/in/nico-morrison/",
+    resume: `${base}assets/resumes/morrison_resume.pdf`
   }
 };
 
