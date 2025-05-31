@@ -34,13 +34,13 @@ const teamData: Record<string, TeamMember> = {
     img: `${base}assets/images/Luca_img.jpg`,
     role: "Aerodynamics Engineer",
     desc: "Luca is a fourth-year Aerospace Engineering student at Cal Poly, concentrating in Aeronautics. He led the initial aerodynamic analysis and design of the A-30 Condor, ensuring the aircraft met performance targets for aerodynamic efficiency while addressing structural constraints. Passionate about advancing his expertise, Luca plans to continue his education at Cal Poly and is on track to earn his master’s degree in Aerospace Engineering by 2026.",
-    linkedin: "https://linkedin.com/in/lucaflickkaiser",
+    linkedin: "https://www.linkedin.com/in/luca-flick-kaiser-05aa50304/",
     resume: `${base}assets/resumes/luca_resume.pdf`
   },
   "Jack Peterson": {
     img: `${base}assets/images/JackP_img.jpg`,
     role: "Stability & Controls Engineer",
-    desc: "Jack is a 5th year Aerospace Engineering student at Cal Poly with a passion for aircraft design and software.",
+    desc: "Jack is a senior aerospace engineering student and licensed private pilot with a passion for both aeronautics and astronautics. In his third and final year, he’s focused on test engineering, research and development, and the design of next-generation air and space vehicles. Jack actively follows emerging aerospace technologies and is inspired by the mission-driven work of companies shaping the future of flight and space exploration.",
     linkedin: "https://www.linkedin.com/in/jackpeterson47",
     resume: `${base}assets/resumes/jackp_resume.pdf`
   },
