@@ -52,9 +52,9 @@ const teamData: Record<string, TeamMember> = {
     resume: `${base}assets/resumes/beath_resume.pdf`
   },
   "Nico Morrison": {
-    img: `${base}assets/images/Nico_img.jpeg`,
+    img: `${base}assets/images/Nico_img.jpg`,
     role: "Subsystems Engineer",
-    desc: "Nico is a 5th year Aerospace Engineering student at Cal Poly with a passion for aircraft design and software.",
+    desc: "Nico is a senior-year aerospace engineering student at Cal Poly, with experience in flight testing, controls, performance, and systems engineering. He led the analysis for the design's subsystem, cost analysis, and scheduling for the project. Excited to learn more about aeronautical engineering, he plans to pursue his master's degree in Aerospace at Cal Poly, analyzing sustainable propulsion configurations in aviation.",
     linkedin: "https://www.linkedin.com/in/nico-morrison/",
     resume: `${base}assets/resumes/morrison_resume.pdf`
   }
