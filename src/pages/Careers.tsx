@@ -61,7 +61,7 @@ const Careers: React.FC = () => {
           }
         ].map(({ title, location, description, salary }) => (
           <div className="job-listing" key={title}>
-            <h2>Job Title: {title}</h2>
+            <h2>{title}</h2>
             <p>Location: {location}</p>
             <p>{description}</p>
             <p className="salary">Salary: {salary}</p>

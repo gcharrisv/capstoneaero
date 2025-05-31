@@ -11,11 +11,25 @@
   border-top: 1px solid var(--color-accent);
 }
 
+.footer-logo-divider {
+  width: 1px;
+  height: 40px;
+  background-color: var(--color-accent);
+  opacity: 0.8;
+}
+
+.footer-logo-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+
 /* Logos section */
 .footer-logos {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
+  gap: 1rem;
 }
 
 .footer-logo {
@@ -27,13 +41,13 @@
 /* Email button */
 .footer-contact {
   display: flex;
-  justify-content: center;
+  justify-content: right;
   align-items: center;
   flex: 1;
 }
 
 .connect-button {
-  padding: 0.75rem 1.5rem;
+  padding: 1rem 1.5rem;
   background-color: var(--color-accent);
   color: var(--color-background);
   text-decoration: none;
@@ -67,6 +81,25 @@
   color: var(--color-accent);
 }
 
+.footer-bottom {
+  width: 100%;
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.85rem;
+  color: var(--color-text-primary);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 1rem;
+}
+
+.footer-location {
+  margin-bottom: 0.25rem;
+  font-weight: 500;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
 /* Responsive behavior */
 @media (max-width: 768px) {
   .footer {
@@ -90,5 +123,8 @@
   .footer-contact {
     order: 1;
   }
-}
 
+  .footer-bottom {
+    padding-top: 1.5rem;
+  }
+}
