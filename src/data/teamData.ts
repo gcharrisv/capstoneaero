@@ -26,7 +26,7 @@ const teamData: Record<string, TeamMember> = {
   "Euan Houston": {
     img: `${base}assets/images/Euan_img.jpg`,
     role: "Performance Engineer",
-    desc: "Euan graduated from Cal Poly with a degree in Aerospace engineering. He was the performance lead on the A-30 Condor where he ensured the aircraft capabilities through realistic simulation and analysis.",
+    desc: "Euan graduated from Cal Poly with a degree in Aerospace engineering. He was the performance lead on the A-30 Condor where he ensured the aircraft capabilities through realistic simulation and analysis. Eager to use his skills, Euan is now working at Yaskawa Inc. coding and testing large-scale robotics and PLC's.",
     linkedin: "https://www.linkedin.com/in/euanhouston/",
     resume: `${base}assets/resumes/euan_resume.pdf`
   },
