@@ -19,9 +19,9 @@ const teamData: Record<string, TeamMember> = {
   "Jack Kisling": {
     img: `${base}assets/images/JackK_img.jpeg`,
     role: "Configuration & Systems Engineer",
-    desc: "Jack is responsible for system integration and ensuring design consistency across the A-30 Condor.",
-    linkedin: "https://linkedin.com/in/jackkisling",
-    resume: `${base}assets/resumes/jack_resume.pdf`
+    desc: "Jack Kisling is a fourth year aerospace engineering major concentrating in aeronautics. For the A-30 condor he developed the weight and balance models, analyzed the program and unit costs, and helped demonstrate competitive superiority of the design. Jack is excited to move on from aerospace engineering and pursue other ventures. He plans to gain experience as a pilot and transition to fly for the airlines.",
+    linkedin: "https://www.linkedin.com/in/jack-kisling-7973a7229?trk=public_profile_samename-profile",
+    resume: `${base}assets/resumes/jackk_resume.pdf`
   },
   "Euan Houston": {
     img: `${base}assets/images/Euan_img.jpg`,
