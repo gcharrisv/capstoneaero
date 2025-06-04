@@ -16,7 +16,7 @@ const hotspots = [
         top: '56%',
         left: '31%',
         title: 'Sensor Fusion',
-        desc: 'The Condor integrates EO/IR, radar, and SIGINT payloads into a unified mission system, enabling operators to achieve superior situational awareness and real-time threat assessment.',
+        desc: 'The Condor integrates EO/IR and SIGINT payloads into a unified mission system, enabling operators to achieve superior situational awareness and real-time threat assessment.',
     },
 
     {

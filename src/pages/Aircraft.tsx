@@ -38,10 +38,10 @@ const Aircraft: React.FC = () => {
             <p className="intro-label">Light Tactical Aircraft</p>
             <h2 className="intro-title">Built for the Fight, Ready for the Frontier</h2>
             <p>
-              The A-30 Condor is a <strong>rugged, high-performance strike platform</strong> purpose-built for Close Air Support and Counter-Insurgency missions in the world's most demanding environments. Designed to thrive in austere and expeditionary settings, it delivers precision lethality where it matters most.
+              The A-30 Condor is a <strong>rugged, high-performance strike and surveillance platform</strong> purpose-built for Close Air Support, Counter-Insurgency, and persistent Intelligence, Surveillance, and Reconnaissance (ISR) missions in demanding environments. Designed to thrive in austere settings, it delivers precision lethality and real-time situational intelligence where it matters most.
             </p>
             <p>
-              With <strong>modular systems, rapid deployment capability, and exceptional situational awareness</strong>, the Condor gives ground forces the support they need—fast. Whether it’s a dirt strip in a conflict zone or a forward-operating base in the mountains, the Condor gets there, hits hard, and gets out.
+              With <strong>extended loiter times, advanced sensor suites, and modular systems</strong>, the Condor provides unmatched battlefield awareness and rapid response capability. Whether operating from a dirt strip in a conflict zone or patrolling above a remote region for hours on end, the Condor arrives ready, observes continuously, and strikes decisively.
             </p>
           </div>
         </div>
@@ -124,7 +124,7 @@ const Aircraft: React.FC = () => {
           <h3>Mission-Ready, Cost-Effective</h3>
           <hr />
           <p>
-            Built with affordability in mind, the A-30 Condor delivers frontline capabilities at a fraction of the cost of legacy strike aircraft. Leveraging commercial off-the-shelf components and a streamlined digital production pipeline, the Condor minimizes both acquisition and lifecycle costs—without sacrificing performance.
+            Built with affordability in mind, the A-30 Condor delivers frontline capabilities at a fraction of the cost of legacy strike aircraft. By leveraging commercial off-the-shelf components, the Condor significantly reduces both acquisition and lifecycle costs—without compromising performance, reliability, or mission readiness.
           </p>
         </div>
 
@@ -140,7 +140,7 @@ const Aircraft: React.FC = () => {
           <h3>Built for the Harshest Conditions</h3>
           <hr />
           <p>
-            Engineered for austere and expeditionary operations, the A-30 is rugged enough for unprepared runways and forward arming and refueling points. From jungle to desert, it’s designed to operate where others can't—supporting ground forces in the most demanding environments on Earth.
+            Engineered for austere operations, the A-30 is rugged enough for unprepared runways and forward arming and refueling points. From jungle to desert, it’s designed to operate where others can’t—delivering mission-critical capabilities in remote, high-risk, and logistically challenging regions.
           </p>
         </div>
 
